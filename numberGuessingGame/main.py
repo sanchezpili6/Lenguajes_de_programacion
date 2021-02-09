@@ -1,3 +1,5 @@
+# number guessing game
+
 import random
 
 print('set the lower bound:')
