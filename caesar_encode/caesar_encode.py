@@ -1,4 +1,5 @@
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'z']
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+            'v', 'x', 'y', 'z']
 encoded_message_list = []
 encoded_message = ""
 
@@ -11,4 +12,4 @@ def caesar_encode(message, shift_num):
     return encoded_message.join(encoded_message_list)
 
 
-print(caesar_encode('lenguajes', 3))
+print(caesar_encode('abc', 3))
