@@ -1,7 +1,12 @@
 #lang racket
 
-(define (hailstone number)
-  my-list (list number)
+(define (last_element l)
+  (cond ((null? (cdr l)) (car l))
+        (else (last_element (cdr l)))))
+
+(define (hailstone n)
+  (define hailstone-list (list n))
+
   (cond
     [(= number 0) "Input less than 1"]
     [(= number 1) "(1)"]
